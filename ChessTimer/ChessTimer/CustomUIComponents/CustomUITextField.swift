@@ -20,7 +20,7 @@ let animationTimer20ms: TimeInterval = 0.20
     var fontSize: CGFloat = 16
     var bottomBorderHeight: CGFloat = 1
     let offset: CGFloat = 8
-    var border = UIView()
+    var labelBottomBorder = UIView()
     var placeHolderLabel = UILabel()
 
     weak var customUITextFieldDelegate: CustomUITextFieldProtocol?
@@ -32,11 +32,11 @@ let animationTimer20ms: TimeInterval = 0.20
     }
     
     /// This variable is used to scale up and down the label
-    var scale: CGFloat {
+    var scalePalceHolderLabel: CGFloat {
         placeHolderSize / fontSize
     }
         
-    /// This checks where the label is empty or not
+    /// This checks where the label is empty or not and retuns value
     var isEmpty: Bool {
         text?.isEmpty ?? true
     }
@@ -47,7 +47,6 @@ let animationTimer20ms: TimeInterval = 0.20
     }
     
     // MARK: - Initialization
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
@@ -64,7 +63,7 @@ let animationTimer20ms: TimeInterval = 0.20
     
     override open func layoutSubviews() {
         super.layoutSubviews()
-        border.frame = CGRect(x: 0, y: bounds.height - 1, width: bounds.width, height: bottomBorderHeight)
+        labelBottomBorder.frame = CGRect(x: 0, y: bounds.height - 1, width: bounds.width, height: bottomBorderHeight)
         updateLabel()
     }
     
@@ -93,13 +92,13 @@ let animationTimer20ms: TimeInterval = 0.20
     func setupUI() {
         borderStyle = .none
         font = .systemFont(ofSize: 16)
-        border.backgroundColor = ColorConstants.lightGray
-        border.isUserInteractionEnabled = false
+        labelBottomBorder.backgroundColor = ColorConstants.lightGray
+        labelBottomBorder.isUserInteractionEnabled = false
         placeHolderLabel.textColor = ColorConstants.lightGray
         placeHolderLabel.font = .systemFont(ofSize: 16)
         placeHolderLabel.text = placeholder
         placeHolderLabel.isUserInteractionEnabled = false
-        addSubview(border)
+        addSubview(labelBottomBorder)
         addSubview(placeHolderLabel)
         addTarget(self, action: #selector(handleTextFieldEditing), for: .allEditingEvents)
         delegate = self
@@ -116,24 +115,24 @@ let animationTimer20ms: TimeInterval = 0.20
         let borderColor = isFirstResponder ? ColorConstants.greenHighlighted : ColorConstants.lightGray
         bottomBorderHeight = isFirstResponder ? 2.0 : 1.0
         UIView.animate(withDuration: animationTimer20ms) {
-            self.border.backgroundColor = borderColor
+            self.labelBottomBorder.backgroundColor = borderColor
         }
     }
     
     /// TextField State we animate
     func updateLabel() {
-        let isActive = isFirstResponder || !isEmpty
+        let isTextFieldSelected = isFirstResponder || !isEmpty
         self.placeHolderLabel.textColor = isFirstResponder ? ColorConstants.greenHighlighted : ColorConstants.lightGray
-        self.fontSize = isActive ? 15 : 19
-        let offsetX = -placeHolderLabel.bounds.width * (1 - scale) / 2
-        let offsetY = -placeHolderLabel.bounds.height * (1 - scale) / 2
+        self.fontSize = isTextFieldSelected ? 15 : 19
+        let offsetX = -placeHolderLabel.bounds.width * (1 - scalePalceHolderLabel) / 2
+        let offsetY = -placeHolderLabel.bounds.height * (1 - scalePalceHolderLabel) / 2
         
         let transform = CGAffineTransform(translationX: offsetX, y: offsetY - labelHeight - offset)
-            .scaledBy(x: scale, y: scale)
+            .scaledBy(x: scalePalceHolderLabel, y: scalePalceHolderLabel)
         
         UIView.animate(withDuration: animationTimer20ms) {
-            self.placeHolderLabel.font = isActive ? .systemFont(ofSize: 16) : .systemFont(ofSize: 19)
-            self.placeHolderLabel.transform = isActive ? transform : .identity
+            self.placeHolderLabel.font = isTextFieldSelected ? .systemFont(ofSize: 16) : .systemFont(ofSize: 19)
+            self.placeHolderLabel.transform = isTextFieldSelected ? transform : .identity
         }
     }
 }
