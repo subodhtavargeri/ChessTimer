@@ -6,6 +6,9 @@
 //
 
 import Foundation
+/// Route Back to GameTimer
+/// - Parameters:
+/// - viewController: ShowPlyerTimer Controller
 protocol ShowPlayerTimerRouterProtocol: AnyObject {
     func routeToShowPlayerTimerViewController(viewController:ShowPlayerTimerViewController?)
 }
