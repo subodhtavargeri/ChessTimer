@@ -1,0 +1,8 @@
+
+"minimum_time" = "Time Should be more than 0 minutes (EN).";
+"maximum_time" = "Time Should not be more than 120 minutes (EN).";
+"player_lost" = "Player %d Lost!!!";
+"player_won" = "Player %d Won!!!";
+"reset_timer" = "Are you sure you want to reset?";
+"close_screen" = "Are you sure you want to go back?";
+"game_information" = "Each player game time: %d minutes.\nPress Start Button to begin timer.\nPlayer has to stop their own timer and other player timer will automatically start.\nPress reset button to begin game again.";

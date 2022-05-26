@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameTimerViewController" customModule="ChessTimer" customModuleProvider="target">
+            <connections>
+                <outlet property="gameTimerTextField" destination="LLj-jM-D8m" id="CZJ-1Y-UZP"/>
+                <outlet property="view" destination="iN0-l3-epB" id="PgC-Oi-G9W"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome To Chess Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLK-5D-80w">
+                    <rect key="frame" x="16" y="68" width="382" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ek2-zw-A8R">
+                    <rect key="frame" x="0.0" y="94" width="414" height="2"/>
+                    <color key="backgroundColor" systemColor="labelColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="jul-7Y-Y6D"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Player Time in Minutes" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LLj-jM-D8m" customClass="CustomUITextFieldExtension" customModule="ChessTimer" customModuleProvider="target">
+                    <rect key="frame" x="16" y="147" width="382" height="65"/>
+                    <accessibility key="accessibilityConfiguration" identifier="playerTimer_textField"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="drH-bE-E91"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cex-5s-PLM">
+                    <rect key="frame" x="16" y="252" width="382" height="31"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <color key="tintColor" systemColor="tintColor"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Done"/>
+                    <connections>
+                        <action selector="doneButtonPressed:" destination="-1" eventType="touchUpInside" id="cB4-kK-cdf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="LLj-jM-D8m" firstAttribute="trailing" secondItem="YLK-5D-80w" secondAttribute="trailing" id="7oG-LI-Xpd"/>
+                <constraint firstItem="Cex-5s-PLM" firstAttribute="leading" secondItem="LLj-jM-D8m" secondAttribute="leading" id="8P6-bI-pgW"/>
+                <constraint firstItem="ek2-zw-A8R" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="8rH-MF-Q9V"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="YLK-5D-80w" secondAttribute="trailing" constant="16" id="DOg-PW-zkD"/>
+                <constraint firstItem="ek2-zw-A8R" firstAttribute="top" secondItem="YLK-5D-80w" secondAttribute="bottom" constant="2" id="DUC-WB-au0"/>
+                <constraint firstItem="YLK-5D-80w" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="JGo-qs-AGx"/>
+                <constraint firstItem="YLK-5D-80w" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="24" id="QlZ-AJ-aCA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ek2-zw-A8R" secondAttribute="trailing" id="RQm-kd-PTA"/>
+                <constraint firstItem="LLj-jM-D8m" firstAttribute="top" secondItem="YLK-5D-80w" secondAttribute="bottom" constant="55" id="Xb5-ig-fx9"/>
+                <constraint firstItem="Cex-5s-PLM" firstAttribute="trailing" secondItem="LLj-jM-D8m" secondAttribute="trailing" id="aug-aL-ndV"/>
+                <constraint firstItem="Cex-5s-PLM" firstAttribute="top" secondItem="LLj-jM-D8m" secondAttribute="bottom" constant="40" id="d4a-Uj-31F"/>
+                <constraint firstItem="LLj-jM-D8m" firstAttribute="leading" secondItem="YLK-5D-80w" secondAttribute="leading" id="lqx-XC-ogN"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="LLj-jM-D8m">
+            <size key="intrinsicContentSize" width="382" height="65"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

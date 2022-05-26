@@ -1,0 +1,929 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B33586E28381C3D006AD233 /* ShowPlayerTimerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B33586D28381C3D006AD233 /* ShowPlayerTimerFactory.swift */; };
+		5B33587028381CE0006AD233 /* ShowPlayerTimerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B33586F28381CE0006AD233 /* ShowPlayerTimerRouter.swift */; };
+		5B33587228381CED006AD233 /* ShowPlayerTimerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B33587128381CED006AD233 /* ShowPlayerTimerPresenter.swift */; };
+		5B33587428381CFB006AD233 /* ShowPlayerTimerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B33587328381CFB006AD233 /* ShowPlayerTimerInteractor.swift */; };
+		5B335877283831D2006AD233 /* PlayerModelTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B335876283831D2006AD233 /* PlayerModelTimer.swift */; };
+		5B33587A28383BD6006AD233 /* CommonUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B33587928383BD6006AD233 /* CommonUtility.swift */; };
+		5B5B224B283F7CF50035459A /* ShowPlayerTimerViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5B224A283F7CF50035459A /* ShowPlayerTimerViewControllerTests.swift */; };
+		5B5B224E283F90F20035459A /* CommonUtilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5B224D283F90F20035459A /* CommonUtilityTests.swift */; };
+		5BA107E2283BEEEE0018B88E /* GameTimerRouterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA107E1283BEEEE0018B88E /* GameTimerRouterSpy.swift */; };
+		5BA107E4283BF0660018B88E /* GameTimerPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA107E3283BF0660018B88E /* GameTimerPresenterSpy.swift */; };
+		5BA107E6283BF0D90018B88E /* GameTimerInteractorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA107E5283BF0D90018B88E /* GameTimerInteractorSpy.swift */; };
+		5BA107E8283BF10A0018B88E /* GameTimerViewControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA107E7283BF1090018B88E /* GameTimerViewControllerSpy.swift */; };
+		5BA107EA283BF14D0018B88E /* GameTimerPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA107E9283BF14D0018B88E /* GameTimerPresenterTests.swift */; };
+		5BA107EC283BFEFF0018B88E /* GameTimerInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA107EB283BFEFF0018B88E /* GameTimerInteractorTests.swift */; };
+		5BA107EE283C03210018B88E /* GameTimerViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA107ED283C03210018B88E /* GameTimerViewControllerTests.swift */; };
+		5BA107F2283C08620018B88E /* ShowPlayerTimerViewControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA107F1283C08620018B88E /* ShowPlayerTimerViewControllerSpy.swift */; };
+		5BA107F4283C090E0018B88E /* ShowPlayerTimerInteractorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA107F3283C090E0018B88E /* ShowPlayerTimerInteractorSpy.swift */; };
+		5BA107F6283C095D0018B88E /* ShowPlayerTimerPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA107F5283C095D0018B88E /* ShowPlayerTimerPresenterSpy.swift */; };
+		5BA107F8283C09D80018B88E /* ShowPlayerTimerRouterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA107F7283C09D80018B88E /* ShowPlayerTimerRouterSpy.swift */; };
+		5BA107FA283C0A240018B88E /* ShowPlayerTimerPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA107F9283C0A240018B88E /* ShowPlayerTimerPresenterTests.swift */; };
+		5BA107FC283C14890018B88E /* ShowPlayerTimerInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA107FB283C14890018B88E /* ShowPlayerTimerInteractorTests.swift */; };
+		5BC5CC522836983D005ACD7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC5CC512836983D005ACD7E /* AppDelegate.swift */; };
+		5BC5CC542836983D005ACD7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC5CC532836983D005ACD7E /* SceneDelegate.swift */; };
+		5BC5CC562836983D005ACD7E /* GameTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC5CC552836983D005ACD7E /* GameTimerViewController.swift */; };
+		5BC5CC5B28369848005ACD7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BC5CC5A28369848005ACD7E /* Assets.xcassets */; };
+		5BC5CC5E28369848005ACD7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BC5CC5C28369848005ACD7E /* LaunchScreen.storyboard */; };
+		5BC5CC6928369849005ACD7E /* ChessTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC5CC6828369849005ACD7E /* ChessTimerTests.swift */; };
+		5BC5CC7328369849005ACD7E /* ChessTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC5CC7228369849005ACD7E /* ChessTimerUITests.swift */; };
+		5BC5CC7528369849005ACD7E /* ChessTimerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC5CC7428369849005ACD7E /* ChessTimerUITestsLaunchTests.swift */; };
+		5BC5CC8528369BE6005ACD7E /* GameTimerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC5CC8428369BE6005ACD7E /* GameTimerRouter.swift */; };
+		5BC5CC8828369C06005ACD7E /* GameTimerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC5CC8728369C06005ACD7E /* GameTimerPresenter.swift */; };
+		5BC5CC8B28369C22005ACD7E /* GameTimerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC5CC8A28369C22005ACD7E /* GameTimerInteractor.swift */; };
+		5BC5CC8D28369C41005ACD7E /* GameTimerControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC5CC8C28369C41005ACD7E /* GameTimerControllerFactory.swift */; };
+		5BC5CC932836A27E005ACD7E /* GameTimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC5CC922836A27E005ACD7E /* GameTimerViewController.xib */; };
+		5BC5CC952836A3DC005ACD7E /* CustomUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC5CC942836A3DC005ACD7E /* CustomUITextField.swift */; };
+		5BC5CC972836A494005ACD7E /* ColorConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC5CC962836A494005ACD7E /* ColorConstant.swift */; };
+		5BC5CC992836A94A005ACD7E /* CustomUITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC5CC982836A94A005ACD7E /* CustomUITextFieldExtension.swift */; };
+		5BE6B2412836BD6600C0DDAA /* GameTimerViewController+UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE6B2402836BD6600C0DDAA /* GameTimerViewController+UITextFieldExtension.swift */; };
+		5BE6B2492836D31D00C0DDAA /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 5BE6B2482836D31D00C0DDAA /* en.lproj */; };
+		5BE6B24C2836D43800C0DDAA /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE6B24B2836D43800C0DDAA /* String+Extension.swift */; };
+		5BE6B24F2836DBED00C0DDAA /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE6B24E2836DBED00C0DDAA /* Constant.swift */; };
+		5BE6B2522836EC7F00C0DDAA /* ShowPlayerTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE6B2512836EC7F00C0DDAA /* ShowPlayerTimerViewController.swift */; };
+		5BE6B2542836EC9700C0DDAA /* ShowPlayerTimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BE6B2532836EC9700C0DDAA /* ShowPlayerTimerViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5BC5CC6528369849005ACD7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BC5CC462836983D005ACD7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BC5CC4D2836983D005ACD7E;
+			remoteInfo = ChessTimer;
+		};
+		5BC5CC6F28369849005ACD7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BC5CC462836983D005ACD7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BC5CC4D2836983D005ACD7E;
+			remoteInfo = ChessTimer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5B33586D28381C3D006AD233 /* ShowPlayerTimerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPlayerTimerFactory.swift; sourceTree = "<group>"; };
+		5B33586F28381CE0006AD233 /* ShowPlayerTimerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPlayerTimerRouter.swift; sourceTree = "<group>"; };
+		5B33587128381CED006AD233 /* ShowPlayerTimerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPlayerTimerPresenter.swift; sourceTree = "<group>"; };
+		5B33587328381CFB006AD233 /* ShowPlayerTimerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPlayerTimerInteractor.swift; sourceTree = "<group>"; };
+		5B335876283831D2006AD233 /* PlayerModelTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModelTimer.swift; sourceTree = "<group>"; };
+		5B33587928383BD6006AD233 /* CommonUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtility.swift; sourceTree = "<group>"; };
+		5B5B224A283F7CF50035459A /* ShowPlayerTimerViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPlayerTimerViewControllerTests.swift; sourceTree = "<group>"; };
+		5B5B224D283F90F20035459A /* CommonUtilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtilityTests.swift; sourceTree = "<group>"; };
+		5BA107E1283BEEEE0018B88E /* GameTimerRouterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTimerRouterSpy.swift; sourceTree = "<group>"; };
+		5BA107E3283BF0660018B88E /* GameTimerPresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTimerPresenterSpy.swift; sourceTree = "<group>"; };
+		5BA107E5283BF0D90018B88E /* GameTimerInteractorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTimerInteractorSpy.swift; sourceTree = "<group>"; };
+		5BA107E7283BF1090018B88E /* GameTimerViewControllerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTimerViewControllerSpy.swift; sourceTree = "<group>"; };
+		5BA107E9283BF14D0018B88E /* GameTimerPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTimerPresenterTests.swift; sourceTree = "<group>"; };
+		5BA107EB283BFEFF0018B88E /* GameTimerInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTimerInteractorTests.swift; sourceTree = "<group>"; };
+		5BA107ED283C03210018B88E /* GameTimerViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTimerViewControllerTests.swift; sourceTree = "<group>"; };
+		5BA107F1283C08620018B88E /* ShowPlayerTimerViewControllerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPlayerTimerViewControllerSpy.swift; sourceTree = "<group>"; };
+		5BA107F3283C090E0018B88E /* ShowPlayerTimerInteractorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPlayerTimerInteractorSpy.swift; sourceTree = "<group>"; };
+		5BA107F5283C095D0018B88E /* ShowPlayerTimerPresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPlayerTimerPresenterSpy.swift; sourceTree = "<group>"; };
+		5BA107F7283C09D80018B88E /* ShowPlayerTimerRouterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPlayerTimerRouterSpy.swift; sourceTree = "<group>"; };
+		5BA107F9283C0A240018B88E /* ShowPlayerTimerPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPlayerTimerPresenterTests.swift; sourceTree = "<group>"; };
+		5BA107FB283C14890018B88E /* ShowPlayerTimerInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPlayerTimerInteractorTests.swift; sourceTree = "<group>"; };
+		5BC5CC4E2836983D005ACD7E /* ChessTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChessTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BC5CC512836983D005ACD7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5BC5CC532836983D005ACD7E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5BC5CC552836983D005ACD7E /* GameTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTimerViewController.swift; sourceTree = "<group>"; };
+		5BC5CC5A28369848005ACD7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5BC5CC5D28369848005ACD7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5BC5CC5F28369848005ACD7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BC5CC6428369849005ACD7E /* ChessTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChessTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BC5CC6828369849005ACD7E /* ChessTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessTimerTests.swift; sourceTree = "<group>"; };
+		5BC5CC6E28369849005ACD7E /* ChessTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChessTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BC5CC7228369849005ACD7E /* ChessTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessTimerUITests.swift; sourceTree = "<group>"; };
+		5BC5CC7428369849005ACD7E /* ChessTimerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessTimerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5BC5CC8428369BE6005ACD7E /* GameTimerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTimerRouter.swift; sourceTree = "<group>"; };
+		5BC5CC8728369C06005ACD7E /* GameTimerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTimerPresenter.swift; sourceTree = "<group>"; };
+		5BC5CC8A28369C22005ACD7E /* GameTimerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTimerInteractor.swift; sourceTree = "<group>"; };
+		5BC5CC8C28369C41005ACD7E /* GameTimerControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTimerControllerFactory.swift; sourceTree = "<group>"; };
+		5BC5CC922836A27E005ACD7E /* GameTimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameTimerViewController.xib; sourceTree = "<group>"; };
+		5BC5CC942836A3DC005ACD7E /* CustomUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUITextField.swift; sourceTree = "<group>"; };
+		5BC5CC962836A494005ACD7E /* ColorConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstant.swift; sourceTree = "<group>"; };
+		5BC5CC982836A94A005ACD7E /* CustomUITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUITextFieldExtension.swift; sourceTree = "<group>"; };
+		5BE6B2402836BD6600C0DDAA /* GameTimerViewController+UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameTimerViewController+UITextFieldExtension.swift"; sourceTree = "<group>"; };
+		5BE6B2482836D31D00C0DDAA /* en.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = en.lproj; sourceTree = "<group>"; };
+		5BE6B24B2836D43800C0DDAA /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		5BE6B24E2836DBED00C0DDAA /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		5BE6B2512836EC7F00C0DDAA /* ShowPlayerTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPlayerTimerViewController.swift; sourceTree = "<group>"; };
+		5BE6B2532836EC9700C0DDAA /* ShowPlayerTimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowPlayerTimerViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5BC5CC4B2836983D005ACD7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BC5CC6128369849005ACD7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BC5CC6B28369849005ACD7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B33586728381AE6006AD233 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5BE6B2512836EC7F00C0DDAA /* ShowPlayerTimerViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5B33586828381AFF006AD233 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				5BE6B2532836EC9700C0DDAA /* ShowPlayerTimerViewController.xib */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		5B33586928381B0C006AD233 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5B33587328381CFB006AD233 /* ShowPlayerTimerInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5B33586A28381B15006AD233 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5B33587128381CED006AD233 /* ShowPlayerTimerPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5B33586B28381B1C006AD233 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5B33586F28381CE0006AD233 /* ShowPlayerTimerRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5B33586C28381C13006AD233 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				5B33586D28381C3D006AD233 /* ShowPlayerTimerFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		5B335875283831C0006AD233 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5B335876283831D2006AD233 /* PlayerModelTimer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5B33587828383BBF006AD233 /* CommonUtility */ = {
+			isa = PBXGroup;
+			children = (
+				5B33587928383BD6006AD233 /* CommonUtility.swift */,
+			);
+			path = CommonUtility;
+			sourceTree = "<group>";
+		};
+		5B5B224C283F90CD0035459A /* CommonUitliyTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B5B224D283F90F20035459A /* CommonUtilityTests.swift */,
+			);
+			path = CommonUitliyTests;
+			sourceTree = "<group>";
+		};
+		5BA107DF283BEEC80018B88E /* GameTimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5BA107E0283BEECF0018B88E /* Spy */,
+				5BA107E9283BF14D0018B88E /* GameTimerPresenterTests.swift */,
+				5BA107EB283BFEFF0018B88E /* GameTimerInteractorTests.swift */,
+				5BA107ED283C03210018B88E /* GameTimerViewControllerTests.swift */,
+			);
+			path = GameTimerTests;
+			sourceTree = "<group>";
+		};
+		5BA107E0283BEECF0018B88E /* Spy */ = {
+			isa = PBXGroup;
+			children = (
+				5BA107E1283BEEEE0018B88E /* GameTimerRouterSpy.swift */,
+				5BA107E3283BF0660018B88E /* GameTimerPresenterSpy.swift */,
+				5BA107E5283BF0D90018B88E /* GameTimerInteractorSpy.swift */,
+				5BA107E7283BF1090018B88E /* GameTimerViewControllerSpy.swift */,
+			);
+			path = Spy;
+			sourceTree = "<group>";
+		};
+		5BA107EF283C082D0018B88E /* ShowPlayerTimeTests */ = {
+			isa = PBXGroup;
+			children = (
+				5BA107F0283C083A0018B88E /* Spy */,
+				5BA107F9283C0A240018B88E /* ShowPlayerTimerPresenterTests.swift */,
+				5BA107FB283C14890018B88E /* ShowPlayerTimerInteractorTests.swift */,
+				5B5B224A283F7CF50035459A /* ShowPlayerTimerViewControllerTests.swift */,
+			);
+			path = ShowPlayerTimeTests;
+			sourceTree = "<group>";
+		};
+		5BA107F0283C083A0018B88E /* Spy */ = {
+			isa = PBXGroup;
+			children = (
+				5BA107F1283C08620018B88E /* ShowPlayerTimerViewControllerSpy.swift */,
+				5BA107F3283C090E0018B88E /* ShowPlayerTimerInteractorSpy.swift */,
+				5BA107F5283C095D0018B88E /* ShowPlayerTimerPresenterSpy.swift */,
+				5BA107F7283C09D80018B88E /* ShowPlayerTimerRouterSpy.swift */,
+			);
+			path = Spy;
+			sourceTree = "<group>";
+		};
+		5BC5CC452836983D005ACD7E = {
+			isa = PBXGroup;
+			children = (
+				5BC5CC502836983D005ACD7E /* ChessTimer */,
+				5BC5CC6728369849005ACD7E /* ChessTimerTests */,
+				5BC5CC7128369849005ACD7E /* ChessTimerUITests */,
+				5BC5CC4F2836983D005ACD7E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5BC5CC4F2836983D005ACD7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BC5CC4E2836983D005ACD7E /* ChessTimer.app */,
+				5BC5CC6428369849005ACD7E /* ChessTimerTests.xctest */,
+				5BC5CC6E28369849005ACD7E /* ChessTimerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BC5CC502836983D005ACD7E /* ChessTimer */ = {
+			isa = PBXGroup;
+			children = (
+				5B33587828383BBF006AD233 /* CommonUtility */,
+				5BE6B2502836EC4E00C0DDAA /* PlayersTimer */,
+				5BE6B24D2836DBD800C0DDAA /* Constant */,
+				5BE6B24A2836D41E00C0DDAA /* StringExtension */,
+				5BE6B2472836D2E500C0DDAA /* LocalizationFiles */,
+				5BC5CC8E28369E5B005ACD7E /* CustomUIComponents */,
+				5BC5CC8128369BAF005ACD7E /* GameTimer */,
+				5BC5CC512836983D005ACD7E /* AppDelegate.swift */,
+				5BC5CC532836983D005ACD7E /* SceneDelegate.swift */,
+				5BC5CC5C28369848005ACD7E /* LaunchScreen.storyboard */,
+				5BC5CC5F28369848005ACD7E /* Info.plist */,
+				5BC5CC5A28369848005ACD7E /* Assets.xcassets */,
+			);
+			path = ChessTimer;
+			sourceTree = "<group>";
+		};
+		5BC5CC6728369849005ACD7E /* ChessTimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B5B224C283F90CD0035459A /* CommonUitliyTests */,
+				5BA107EF283C082D0018B88E /* ShowPlayerTimeTests */,
+				5BA107DF283BEEC80018B88E /* GameTimerTests */,
+				5BC5CC6828369849005ACD7E /* ChessTimerTests.swift */,
+			);
+			path = ChessTimerTests;
+			sourceTree = "<group>";
+		};
+		5BC5CC7128369849005ACD7E /* ChessTimerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5BC5CC7228369849005ACD7E /* ChessTimerUITests.swift */,
+				5BC5CC7428369849005ACD7E /* ChessTimerUITestsLaunchTests.swift */,
+			);
+			path = ChessTimerUITests;
+			sourceTree = "<group>";
+		};
+		5BC5CC8128369BAF005ACD7E /* GameTimer */ = {
+			isa = PBXGroup;
+			children = (
+				5BC5CC912836A262005ACD7E /* UIVIEW */,
+				5BC5CC8928369C14005ACD7E /* Interactor */,
+				5BC5CC8628369BF7005ACD7E /* Presenter */,
+				5BC5CC8328369BD3005ACD7E /* Router */,
+				5BC5CC8228369BBC005ACD7E /* ViewController */,
+				5BC5CC8C28369C41005ACD7E /* GameTimerControllerFactory.swift */,
+			);
+			path = GameTimer;
+			sourceTree = "<group>";
+		};
+		5BC5CC8228369BBC005ACD7E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5BE6B23F2836BD1400C0DDAA /* Extension */,
+				5BC5CC552836983D005ACD7E /* GameTimerViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5BC5CC8328369BD3005ACD7E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5BC5CC8428369BE6005ACD7E /* GameTimerRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5BC5CC8628369BF7005ACD7E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5BC5CC8728369C06005ACD7E /* GameTimerPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5BC5CC8928369C14005ACD7E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5BC5CC8A28369C22005ACD7E /* GameTimerInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5BC5CC8E28369E5B005ACD7E /* CustomUIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				5BC5CC942836A3DC005ACD7E /* CustomUITextField.swift */,
+				5BC5CC982836A94A005ACD7E /* CustomUITextFieldExtension.swift */,
+			);
+			path = CustomUIComponents;
+			sourceTree = "<group>";
+		};
+		5BC5CC912836A262005ACD7E /* UIVIEW */ = {
+			isa = PBXGroup;
+			children = (
+				5BC5CC922836A27E005ACD7E /* GameTimerViewController.xib */,
+			);
+			path = UIVIEW;
+			sourceTree = "<group>";
+		};
+		5BE6B23F2836BD1400C0DDAA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5BE6B2402836BD6600C0DDAA /* GameTimerViewController+UITextFieldExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		5BE6B2472836D2E500C0DDAA /* LocalizationFiles */ = {
+			isa = PBXGroup;
+			children = (
+				5BE6B2482836D31D00C0DDAA /* en.lproj */,
+			);
+			path = LocalizationFiles;
+			sourceTree = "<group>";
+		};
+		5BE6B24A2836D41E00C0DDAA /* StringExtension */ = {
+			isa = PBXGroup;
+			children = (
+				5BE6B24B2836D43800C0DDAA /* String+Extension.swift */,
+			);
+			path = StringExtension;
+			sourceTree = "<group>";
+		};
+		5BE6B24D2836DBD800C0DDAA /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				5BC5CC962836A494005ACD7E /* ColorConstant.swift */,
+				5BE6B24E2836DBED00C0DDAA /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		5BE6B2502836EC4E00C0DDAA /* PlayersTimer */ = {
+			isa = PBXGroup;
+			children = (
+				5B335875283831C0006AD233 /* Model */,
+				5B33586C28381C13006AD233 /* Factory */,
+				5B33586B28381B1C006AD233 /* Router */,
+				5B33586A28381B15006AD233 /* Presenter */,
+				5B33586928381B0C006AD233 /* Interactor */,
+				5B33586828381AFF006AD233 /* UIView */,
+				5B33586728381AE6006AD233 /* ViewController */,
+			);
+			path = PlayersTimer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5BC5CC4D2836983D005ACD7E /* ChessTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BC5CC7828369849005ACD7E /* Build configuration list for PBXNativeTarget "ChessTimer" */;
+			buildPhases = (
+				5BC5CC4A2836983D005ACD7E /* Sources */,
+				5BC5CC4B2836983D005ACD7E /* Frameworks */,
+				5BC5CC4C2836983D005ACD7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChessTimer;
+			productName = ChessTimer;
+			productReference = 5BC5CC4E2836983D005ACD7E /* ChessTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5BC5CC6328369849005ACD7E /* ChessTimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BC5CC7B28369849005ACD7E /* Build configuration list for PBXNativeTarget "ChessTimerTests" */;
+			buildPhases = (
+				5BC5CC6028369849005ACD7E /* Sources */,
+				5BC5CC6128369849005ACD7E /* Frameworks */,
+				5BC5CC6228369849005ACD7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BC5CC6628369849005ACD7E /* PBXTargetDependency */,
+			);
+			name = ChessTimerTests;
+			productName = ChessTimerTests;
+			productReference = 5BC5CC6428369849005ACD7E /* ChessTimerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5BC5CC6D28369849005ACD7E /* ChessTimerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BC5CC7E28369849005ACD7E /* Build configuration list for PBXNativeTarget "ChessTimerUITests" */;
+			buildPhases = (
+				5BC5CC6A28369849005ACD7E /* Sources */,
+				5BC5CC6B28369849005ACD7E /* Frameworks */,
+				5BC5CC6C28369849005ACD7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BC5CC7028369849005ACD7E /* PBXTargetDependency */,
+			);
+			name = ChessTimerUITests;
+			productName = ChessTimerUITests;
+			productReference = 5BC5CC6E28369849005ACD7E /* ChessTimerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5BC5CC462836983D005ACD7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					5BC5CC4D2836983D005ACD7E = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					5BC5CC6328369849005ACD7E = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 5BC5CC4D2836983D005ACD7E;
+					};
+					5BC5CC6D28369849005ACD7E = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 5BC5CC4D2836983D005ACD7E;
+					};
+				};
+			};
+			buildConfigurationList = 5BC5CC492836983D005ACD7E /* Build configuration list for PBXProject "ChessTimer" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5BC5CC452836983D005ACD7E;
+			productRefGroup = 5BC5CC4F2836983D005ACD7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BC5CC4D2836983D005ACD7E /* ChessTimer */,
+				5BC5CC6328369849005ACD7E /* ChessTimerTests */,
+				5BC5CC6D28369849005ACD7E /* ChessTimerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5BC5CC4C2836983D005ACD7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BC5CC932836A27E005ACD7E /* GameTimerViewController.xib in Resources */,
+				5BC5CC5E28369848005ACD7E /* LaunchScreen.storyboard in Resources */,
+				5BE6B2542836EC9700C0DDAA /* ShowPlayerTimerViewController.xib in Resources */,
+				5BE6B2492836D31D00C0DDAA /* en.lproj in Resources */,
+				5BC5CC5B28369848005ACD7E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BC5CC6228369849005ACD7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BC5CC6C28369849005ACD7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BC5CC4A2836983D005ACD7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BC5CC8528369BE6005ACD7E /* GameTimerRouter.swift in Sources */,
+				5BC5CC8828369C06005ACD7E /* GameTimerPresenter.swift in Sources */,
+				5BC5CC972836A494005ACD7E /* ColorConstant.swift in Sources */,
+				5BE6B24C2836D43800C0DDAA /* String+Extension.swift in Sources */,
+				5B33587228381CED006AD233 /* ShowPlayerTimerPresenter.swift in Sources */,
+				5BC5CC8D28369C41005ACD7E /* GameTimerControllerFactory.swift in Sources */,
+				5BC5CC992836A94A005ACD7E /* CustomUITextFieldExtension.swift in Sources */,
+				5B33587028381CE0006AD233 /* ShowPlayerTimerRouter.swift in Sources */,
+				5BE6B2412836BD6600C0DDAA /* GameTimerViewController+UITextFieldExtension.swift in Sources */,
+				5B33586E28381C3D006AD233 /* ShowPlayerTimerFactory.swift in Sources */,
+				5B33587428381CFB006AD233 /* ShowPlayerTimerInteractor.swift in Sources */,
+				5B33587A28383BD6006AD233 /* CommonUtility.swift in Sources */,
+				5BC5CC8B28369C22005ACD7E /* GameTimerInteractor.swift in Sources */,
+				5BC5CC952836A3DC005ACD7E /* CustomUITextField.swift in Sources */,
+				5BE6B24F2836DBED00C0DDAA /* Constant.swift in Sources */,
+				5B335877283831D2006AD233 /* PlayerModelTimer.swift in Sources */,
+				5BC5CC562836983D005ACD7E /* GameTimerViewController.swift in Sources */,
+				5BE6B2522836EC7F00C0DDAA /* ShowPlayerTimerViewController.swift in Sources */,
+				5BC5CC522836983D005ACD7E /* AppDelegate.swift in Sources */,
+				5BC5CC542836983D005ACD7E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BC5CC6028369849005ACD7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BA107E2283BEEEE0018B88E /* GameTimerRouterSpy.swift in Sources */,
+				5BA107E6283BF0D90018B88E /* GameTimerInteractorSpy.swift in Sources */,
+				5BA107F6283C095D0018B88E /* ShowPlayerTimerPresenterSpy.swift in Sources */,
+				5B5B224E283F90F20035459A /* CommonUtilityTests.swift in Sources */,
+				5BA107EE283C03210018B88E /* GameTimerViewControllerTests.swift in Sources */,
+				5BA107E8283BF10A0018B88E /* GameTimerViewControllerSpy.swift in Sources */,
+				5BA107F8283C09D80018B88E /* ShowPlayerTimerRouterSpy.swift in Sources */,
+				5BA107FA283C0A240018B88E /* ShowPlayerTimerPresenterTests.swift in Sources */,
+				5BC5CC6928369849005ACD7E /* ChessTimerTests.swift in Sources */,
+				5BA107FC283C14890018B88E /* ShowPlayerTimerInteractorTests.swift in Sources */,
+				5BA107F4283C090E0018B88E /* ShowPlayerTimerInteractorSpy.swift in Sources */,
+				5B5B224B283F7CF50035459A /* ShowPlayerTimerViewControllerTests.swift in Sources */,
+				5BA107EC283BFEFF0018B88E /* GameTimerInteractorTests.swift in Sources */,
+				5BA107EA283BF14D0018B88E /* GameTimerPresenterTests.swift in Sources */,
+				5BA107F2283C08620018B88E /* ShowPlayerTimerViewControllerSpy.swift in Sources */,
+				5BA107E4283BF0660018B88E /* GameTimerPresenterSpy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BC5CC6A28369849005ACD7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BC5CC7328369849005ACD7E /* ChessTimerUITests.swift in Sources */,
+				5BC5CC7528369849005ACD7E /* ChessTimerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5BC5CC6628369849005ACD7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BC5CC4D2836983D005ACD7E /* ChessTimer */;
+			targetProxy = 5BC5CC6528369849005ACD7E /* PBXContainerItemProxy */;
+		};
+		5BC5CC7028369849005ACD7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BC5CC4D2836983D005ACD7E /* ChessTimer */;
+			targetProxy = 5BC5CC6F28369849005ACD7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5BC5CC5C28369848005ACD7E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BC5CC5D28369848005ACD7E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5BC5CC7628369849005ACD7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5BC5CC7728369849005ACD7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5BC5CC7928369849005ACD7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChessTimer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sd.ChessTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5BC5CC7A28369849005ACD7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChessTimer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sd.ChessTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5BC5CC7C28369849005ACD7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sd.ChessTimerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChessTimer.app/ChessTimer";
+			};
+			name = Debug;
+		};
+		5BC5CC7D28369849005ACD7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sd.ChessTimerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChessTimer.app/ChessTimer";
+			};
+			name = Release;
+		};
+		5BC5CC7F28369849005ACD7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sd.ChessTimerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChessTimer;
+			};
+			name = Debug;
+		};
+		5BC5CC8028369849005ACD7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sd.ChessTimerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChessTimer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BC5CC492836983D005ACD7E /* Build configuration list for PBXProject "ChessTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BC5CC7628369849005ACD7E /* Debug */,
+				5BC5CC7728369849005ACD7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BC5CC7828369849005ACD7E /* Build configuration list for PBXNativeTarget "ChessTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BC5CC7928369849005ACD7E /* Debug */,
+				5BC5CC7A28369849005ACD7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BC5CC7B28369849005ACD7E /* Build configuration list for PBXNativeTarget "ChessTimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BC5CC7C28369849005ACD7E /* Debug */,
+				5BC5CC7D28369849005ACD7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BC5CC7E28369849005ACD7E /* Build configuration list for PBXNativeTarget "ChessTimerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BC5CC7F28369849005ACD7E /* Debug */,
+				5BC5CC8028369849005ACD7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5BC5CC462836983D005ACD7E /* Project object */;
+}
