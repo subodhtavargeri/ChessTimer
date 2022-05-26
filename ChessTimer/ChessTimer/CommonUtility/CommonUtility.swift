@@ -3,7 +3,7 @@
 //  ChessTimer
 //
 //  Created by Subodh Tavargeri on 20/05/22.
-//  Create all Commont Functions that can be used in various classes
+//  Create all Commont Functions that can be used in various classes.
 
 import Foundation
 
